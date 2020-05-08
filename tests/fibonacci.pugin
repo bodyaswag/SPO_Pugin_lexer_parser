@@ -1,0 +1,23 @@
+***n number of Fibonacci
+fib0 = 0;
+fib1 = 1;
+n = 0;
+i = 1;
+
+print("Enter n:");
+input(n);
+
+while (i <= n){
+    if(i // 2 == 0){
+        fib0 += fib1;
+    } else {
+        fib1 += fib0;
+    }
+    i+=1;
+}
+
+if (fib0 > fib1){
+    print(n . " Fibonacci number is " . fib0);
+} else {
+    print(n . " Fibonacci number is " . fib1);
+}

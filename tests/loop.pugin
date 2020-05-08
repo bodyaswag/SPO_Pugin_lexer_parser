@@ -1,0 +1,124 @@
+i = 0;
+ans = -1;
+
+while(ans != 0){
+    print("What do you want?");
+    print("1 - HashSet");
+    print("2 - LinkedList");
+    print("3 - factorial");
+    print("4 - fobonacci");
+    print("5 - power of two");
+    print("0 - exit");
+    input(ans);
+
+    if(ans == 1){
+        x = HashSet;
+        print("===INIT HASH SET===");
+        print("[input 0 for exit]");
+        print("Enter a values: ");
+
+        num = -1;
+        input(num);
+        while(num != 0){
+            x->add(num);
+            input(num);
+        }
+
+        s = x->getSize;
+        print("Size of Hash Set: " . s);
+        print("===Checking Hash Set===");
+        print("[input 0 for exit]");
+        print("Enter a values: ");
+
+        num = -1;
+        input(num);
+        while(num != 0){
+            inset = x->inSet(num);
+            if(inset == True){
+                print(num . " in set");
+            }
+            if(inset == False){
+                print(num . " no in set");
+            }
+            input(num);
+        }
+        print("==END==");
+    }
+    if (ans == 2){
+        x = LinkedList;
+        print("===INIT LINKED LIST===");
+        print("[input 0 for exit]");
+        print("Enter a values: ");
+
+        num = -1;
+        input(num);
+        while(num != 0){
+            x->add(num);
+            input(num);
+        }
+        s = x->getSize;
+        print("Size of Linked List: " . s);
+
+        head = x->getFirst;
+        i = 0;
+        end = x->getSize;
+        while(i < end){
+            temp = head->getValue;
+            print(i . " : " . temp);
+            i += 1;
+            head = head->getNext;
+        }
+        print("==END==");
+    }
+    if (ans == 3){
+        print("===FACTORIAL===");
+        factorial = 1;
+        i = 2;
+        n = 20;
+
+        print("Enter a number: ");
+        input(n);
+
+        while(i <= n){
+            factorial *= i;
+            i+=1;
+        }
+
+        print(n . "! = " . factorial);
+        print("==END==");
+    }
+    if (ans == 4){
+        print("===FIBONACCI===");
+        fib0 = 0;
+        fib1 = 1;
+        n = 0;
+        i = 1;
+
+        print("Enter n:");
+        input(n);
+
+        while (i <= n){
+            fib1 += fib0;
+            fib0 = fib1 - fib0;
+            i+=1;
+        }
+        print(n . " number of Fibonacci is " . fib0);
+        print("==END==");
+    }
+    if (ans == 5){
+        print("===POWER OF TWO===");
+        n = 0;
+        m = 0;
+        print("Enter n:");
+        input(n);
+        print("Enter m:");
+        input(m);
+
+        while(n <= m){
+            print("2 ^ " . n . " = " . 2 ** n);
+            n+=1;
+        }
+        print("==END==");
+    }
+}
+print("===PROGRAM END===");
