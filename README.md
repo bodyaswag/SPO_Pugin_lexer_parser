@@ -34,7 +34,7 @@
  Поддержка двух классов таких как:<strong>Linked list</strong> и <strong>Hash set</strong>.<br>
  <hr>
  Вся грамматика языка представлена в файле <strong>grammar.txt</strong>
- <h2>Запуск программы</h2>
+ <h2 style="color:red;">Запуск программы</h2>
  Чтобы запустить программу введите следующую команду в консоль:<br>
 <strong>python pugin.py название_программы.pugin</strong>
 
